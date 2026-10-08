@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #171717;
+    background-color: #ffffff;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: 'DM Serif Display', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F7F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5D5CE;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B0B0A8;
+}
+
+/* Prose/article typography styling */
+.editorial-prose {
+  color: #292929;
+  font-size: 1.125rem;
+  line-height: 1.85;
+}
+
+.editorial-prose p {
+  margin-bottom: 1.75rem;
+}
+
+.editorial-prose h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-top: 2.75rem;
+  margin-bottom: 1.25rem;
+  color: #171717;
+}
+
+.editorial-prose h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  color: #171717;
+}
+
+.editorial-prose blockquote {
+  border-left: 3px solid #FF5A36;
+  padding-left: 1.5rem;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #4A4A4A;
+  margin: 2.25rem 0;
+}
+
+.editorial-prose code {
+  background-color: #F7F7F5;
+  border: 1px solid #E8E8E5;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.editorial-prose pre {
+  background-color: #1A1A1A;
+  color: #F0F0EE;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 2rem 0;
+  font-size: 0.925rem;
+  line-height: 1.6;
+}
+
+.editorial-prose pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
+.editorial-prose ul {
+  list-style-type: disc;
+  padding-left: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.editorial-prose ol {
+  list-style-type: decimal;
+  padding-left: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.editorial-prose li {
+  margin-bottom: 0.5rem;
+}
